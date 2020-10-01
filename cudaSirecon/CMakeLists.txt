@@ -32,7 +32,9 @@ message(STATUS "PRIISM_LIB_PATH: " ${PRIISM_LIB_PATH})
 
 find_library(IMLIB imlib PATHS ${PRIISM_LIB_PATH} REQUIRED)
 find_library(IVELIB ive PATHS ${PRIISM_LIB_PATH} REQUIRED)
-
+find_library(BLAS blas REQUIRED)
+find_library(LAPACK lapack REQUIRED)
+find_library(X11 X11 REQUIRED)
 
 if(WIN32)
   find_package(LAPACK)
