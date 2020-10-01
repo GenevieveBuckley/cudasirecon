@@ -132,10 +132,10 @@ else(WIN32)
     ${Boost_PROGRAM_OPTIONS_LIBRARY}
     ${Boost_FILESYSTEM_LIBRARY}
     ${Boost_SYSTEM_LIBRARY}
-    blas
-    lapack
+    ${BLAS}
+    ${LAPACK}
     ${TIFF_LIBRARIES}
-    X11
+    ${X11}
   )
   if(NOT APPLE)
     target_link_libraries(
